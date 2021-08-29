@@ -1,10 +1,148 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Dancing+Script&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 200;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+:root {
+  /* Set neon color */
+  --neon-text-color: #f40;
+  --neon-border-color: #08f;
+}
+
+#parallax {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./assets/large.png), url(./assets/medium.png), url(./assets/small.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+  z-index: -1;
+}
+
+button {
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+h1 {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 0, 0),
+      0 0 82px  rgb(255, 0, 0),
+      0 0 92px  rgb(255, 0, 0),
+      0 0 102px  rgb(255, 0, 0),
+      0 0 151px  rgb(255, 0, 0);
+      margin: 1rem 0 3rem 0;
+}
+
+h2 {
+    color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #0ff,
+      0 0 80px #0ff,
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 150px #0ff;
+      margin: 1rem;
+}
+
+h3 {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(242, 0, 255),
+      0 0 82px rgb(242, 0, 255),
+      0 0 92px rgb(242, 0, 255),
+      0 0 102px rgb(242, 0, 255),
+      0 0 151px rgb(242, 0, 255);
+      margin: 1rem;
+}
+
+
+h4 {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(128, 0, 255),
+      0 0 82px rgb(128, 0, 255),
+      0 0 92px rgb(128, 0, 255),
+      0 0 102px rgb(128, 0, 255),
+      0 0 151px rgb(128, 0, 255);
+      margin: 1rem;
+}
+
+h5 {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(128, 0, 255),
+      0 0 82px rgb(128, 0, 255),
+      0 0 92px rgb(128, 0, 255),
+      0 0 102px rgb(128, 0, 255),
+      0 0 151px rgb(128, 0, 255);
+      margin: 1rem;
+}
+
+
+.App {
+  text-align: center;
+  /* background-image: url(./assets/download.jfif); */
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem; 
+  z-index: -2; 
+}
+
+.image-bg{
+  position: absolute;
+  height:100vh;
+  width: 100vw;
+  background-image: url(./assets/download.jfif);
+  z-index: -1;
+}
+
+
+.three-components {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 40vh;
+  width: 70vw;
+}
+
+.output {
+  height: 40vh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .App-header {
